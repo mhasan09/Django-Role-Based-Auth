@@ -23,9 +23,16 @@
             </div>
             <div>
                 <ul class="navbar-nav">
+                    {% if user.is_authenticated %}
+                    <span class="navbar-text">{{ user.username }}  |  </span>
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link">Logout</a>
+                    </li>
+                    {% else %}
                     <li class="nav-item">
                         <a href="/home" class="nav-link">Login</a>
                     </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
