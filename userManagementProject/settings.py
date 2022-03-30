@@ -78,20 +78,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'userManagementProject.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'dapc6i56sh7lvj',
-#         'USER': 'uabvosnodgpsib',
-#         'PASSWORD': '32338fb2f3a9b4e8260a0e39e58115471ea72dc476573d841a0ea2639377f098',
-#         'HOST': 'ec2-54-173-77-184.compute-1.amazonaws.com',
-#         'PORT': '5432'
-
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
