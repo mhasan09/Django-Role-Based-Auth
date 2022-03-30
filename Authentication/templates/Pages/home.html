@@ -18,6 +18,12 @@
                                 <button type="submit" class="btn btn-danger" name="post-id" value="{{ post.id }}">Delete</button>
                             </form>
                         {% endif %}
+                        {% if user.is_staff %}
+                            <form method="POST">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-warning" name="user-id" value="{{ post.author.id }}">BAN</button>
+                            </form>
+                        {% endif %}
                     </div>
                 </div>
             </div>
